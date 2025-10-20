@@ -3,7 +3,7 @@ title: "Расширяем раздел в EC2"
 date: 2020-01-30
 author: "Silver Ghost"
 tags: ["Разное"]
-image: "https://geeknest.ru/content/images/2025/02/images.png"
+image: "/images/old/code-terminal.jpg"
 description: "Иногда, так случается, что надо расширить диск для какого-то EC2 инстанса. Это можно сделать не останавливая сам инстанс, чтоб не прерывать работу сервиса.
 
 Для этого заходим в веб-консоль AWS, находим нужный volume и увеличиваем его размер.

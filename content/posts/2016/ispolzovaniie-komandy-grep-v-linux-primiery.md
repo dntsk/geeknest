@@ -3,7 +3,7 @@ title: "Использование команды grep в Linux - примеры
 date: 2016-07-05
 author: "Silver Ghost"
 tags: ["Разное"]
-image: "https://geeknest.ru/content/images/2025/03/2025-03-14-13.19.02-1.jpg"
+image: "/images/old/keenetic-router.jpg"
 description: "grep — утилита командной строки, которая находит на вводе строки,
 отвечающие заданному регулярному выражению, и выводит их, если вывод не
 отменён специальным ключом.

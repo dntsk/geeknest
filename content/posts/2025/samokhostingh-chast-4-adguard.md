@@ -3,7 +3,7 @@ title: "Самохостинг (часть 4) - AdGuard"
 date: 2025-02-25
 author: "Silver Ghost"
 tags: ["Самохостинг"]
-image: "https://geeknest.ru/content/images/2025/02/AdguardHome.webp"
+image: "/images/old/adguard-dns.jpg"
 description: "AdGuard Home: Что это и для чего?
 
 AdGuard Home — это бесплатное программное обеспечение, которое работает как локальный DNS-сервер, фильтрующий рекламу и блокирующий вредоносные сайты. Его основные преимущества:

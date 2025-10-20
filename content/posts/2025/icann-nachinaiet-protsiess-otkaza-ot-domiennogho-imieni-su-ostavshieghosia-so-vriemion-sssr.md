@@ -3,7 +3,7 @@ title: "ICANN начинает процесс отказа от доменног
 date: 2025-03-13
 author: "Silver Ghost"
 tags: ["Новости"]
-image: "https://geeknest.ru/content/images/2025/03/dot-su.webp"
+image: "/images/old/domain-internet.jpg"
 description: "ICANN сообщила оператору доменной зоны .su о планах по её постепенному прекращению в течение пяти лет, пишет Domain Name Wire. Доменная зона .su, которая до сих пор доступна для регистрации и насчитывает порядка 100 000 доменов, находится под управлением Российского института развития общественных сетей.
 
 6 февраля организация Public Technical Identifiers"

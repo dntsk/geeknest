@@ -3,7 +3,7 @@ title: "Мониторинг долгих запросов PostgreSQL в Prometh
 date: 2025-02-17
 author: "Silver Ghost"
 tags: ["Самохостинг"]
-image: "https://geeknest.ru/content/images/2025/02/2025-02-17-16.50.45.jpg"
+image: "/images/old/postgresql-monitoring.jpg"
 description: "Предположим, что у вас есть PostgreSQL (AWS RDS или классический PostgreSQL server), Prometheus, postgres exporter и alertmanager с Grafana.
 
 Стоит задача присылать уведомления о том, что в Postgres подвис запрос. Причина и т.п. нас мало интересует. Нужно просто сказать всем, кому положено, что есть проблема и ее нужно решить."

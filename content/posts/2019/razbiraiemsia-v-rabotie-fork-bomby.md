@@ -3,7 +3,7 @@ title: "Разбираемся в работе fork бомбы"
 date: 2019-01-23
 author: "Silver Ghost"
 tags: ["Разное"]
-image: "https://geeknest.ru/content/images/2025/02/Fork_bomb.svg.png"
+image: "/images/old/fork-bomb.jpg"
 description: "Можете ли вы объяснить как работает fork бомба на bash?
 
 :(){ :|:&amp; };:

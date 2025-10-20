@@ -3,7 +3,7 @@ title: "Apple добавляет сквозное шифрование для о
 date: 2025-03-17
 author: "Silver Ghost"
 tags: ["Новости"]
-image: "https://geeknest.ru/content/images/2025/03/iMessage-Apple-iPhone-iPad-iPod-Mac-1000x523.jpg"
+image: "/images/old/apple-imessage.jpg"
 description: "Apple объявила о внедрении сквозного шифрования (E2EE) для Rich Communication Services (RCS) на iPhone, что значительно улучшит безопасность кроссплатформенных сообщений между пользователями iOS и Android.
 
 Это объявление последовало за выпуском новой спецификации RCS Universal Profile 3.0 от GSM Association (GSMA), которая включает E2EE на основе протокола Messaging Layer Security"
