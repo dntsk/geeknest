@@ -6,7 +6,7 @@ COPY . .
 RUN hugo --minify
 
 # Production stage
-FROM nginx:alpine
+FROM docker.angie.software/angie:latest
 
 COPY --from=builder /src/public /usr/share/nginx/html
 
