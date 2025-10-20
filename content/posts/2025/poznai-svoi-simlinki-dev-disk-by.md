@@ -4,33 +4,26 @@ date: 2025-10-20
 author: "Silver Ghost"
 tags: ["Перевод"]
 image: "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDY5fHxkaXNrfGVufDB8fHx8MTc2MDk1OTEwMXww&amp;ixlib&#x3D;rb-4.1.0&amp;q&#x3D;80&amp;w&#x3D;2000"
-description: "Где создаются ссылки﻿
+description: "Где создаются ссылки
 
 Симлинки могут быть созданы:
 
- * во время форматирования файловой системы утилитой mkfs﻿;
- * при загрузке системы (boot up﻿).
+ * во время форматирования файловой системы утилитой mkfs;
+ * при загрузке системы (boot up).
 
-
-Пример содержимого каталога /dev/disk﻿
-
-`[root@host disk]# pwd
-/dev/disk
-[root@host disk]# ls -l
-drwxr-xr-x. 2 root root 320 Apr  1 13:47 by-id
-drwxr-xr-x. 2 root root  60"`
 ---
 
-## Где создаются ссылки﻿
+## Где создаются ссылки
 
 Симлинки могут быть созданы:
 
-- во время форматирования файловой системы утилитой mkfs﻿;
-- при загрузке системы (boot up﻿).
+- во время форматирования файловой системы утилитой mkfs;
+- при загрузке системы (boot up).
 
-## Пример содержимого каталога /dev/disk﻿
+## Пример содержимого каталога /dev/disk
 
-`[root@host disk]# pwd
+```
+[root@host disk]# pwd
 /dev/disk
 [root@host disk]# ls -l
 drwxr-xr-x. 2 root root 320 Apr  1 13:47 by-id
@@ -38,7 +31,9 @@ drwxr-xr-x. 2 root root  60 Mar 18 10:13 by-label
 drwxr-xr-x. 2 root root  60 Mar 18 10:12 by-partlabel
 drwxr-xr-x. 2 root root 100 Mar 18 10:12 by-partuuid
 drwxr-xr-x. 2 root root 180 Apr  1 13:47 by-path
-drwxr-xr-x. 2 root root 120 Jun 17 05:26 by-uuid`
+drwxr-xr-x. 2 root root 120 Jun 17 05:26 by-uuid
+```
+
 ---
 
 ## Во время mkfs﻿
