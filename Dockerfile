@@ -1,8 +1,9 @@
 # Build stage
 FROM ghcr.io/gohugoio/hugo:v0.151.2 AS builder
 
-WORKDIR /hugo-site
+WORKDIR /site
 COPY . .
+RUN chmod -R u+w /site
 RUN hugo --minify
 
 # Production stage
