@@ -369,6 +369,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .gh-outer {
+        padding: 0 5vw;
+    }
+
     .gh-head-inner {
         flex-direction: column;
         align-items: flex-start;
@@ -393,5 +397,27 @@ body {
 
     .gh-article-title {
         font-size: 2rem;
+    }
+
+    .gh-article-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gh-outer {
+        padding: 0 6vw;
+    }
+
+    .gh-main {
+        padding: 2rem 0;
+    }
+
+    .gh-article-content img {
+        margin-left: -6vw;
+        margin-right: -6vw;
+        width: calc(100% + 12vw);
+        max-width: calc(100% + 12vw);
+        border-radius: 0;
     }
 }
