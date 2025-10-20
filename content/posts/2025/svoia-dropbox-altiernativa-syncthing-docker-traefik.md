@@ -3,7 +3,7 @@ title: "🔄 Своя Dropbox-альтернатива: Syncthing"
 date: 2025-05-26
 author: "Silver Ghost"
 tags: ["Самохостинг"]
-image: "https://geeknest.ru/content/images/2025/05/syncthing_logo-2944910727.png"
+image: "/images/2025/syncthing.jpeg"
 description: "🧠 Зачем?
 
 Облачные сервисы — удобно, но:

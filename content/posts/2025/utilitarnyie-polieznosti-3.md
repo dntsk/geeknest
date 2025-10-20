@@ -3,7 +3,7 @@ title: "Утилитарные полезности"
 date: 2025-03-17
 author: "Silver Ghost"
 tags: ["Утилиты"]
-image: "https://geeknest.ru/content/images/2025/03/15800087173_c3e3d48935_z.jpg"
+image: "/images/2025/tools.jpg"
 description: "DiskStation Manager в Docker
 
 GitHub - vdsm/virtual-dsm: Virtual DSM in a Docker container.Virtual DSM in a Docker container. Contribute to vdsm/virtual-dsm development by creating an account on GitHub.GitHubvdsm

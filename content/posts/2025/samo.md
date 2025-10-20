@@ -3,7 +3,7 @@ title: "Самохостниг (часть 10) - AudiobookShelf"
 date: 2025-04-14
 author: "Silver Ghost"
 tags: ["Самохостинг"]
-image: "https://geeknest.ru/content/images/2025/03/Audiobookshelf_Logo.svg"
+image: "/images/2025/audiobookshelf.jpeg"
 description: "AudiobookShelf - это бесплатный сервер аудиокниг и подкастов с открытым исходным кодом. Он позволяет вам организовать вашу коллекцию аудиокниг и подкастов, следить за прогрессом прослушивания и синхронизировать его между устройствами.
 
 В этой статье мы рассмотрим, как установить AudiobookShelf с помощью Docker Compose и настроить его работу через Traefik.

@@ -3,7 +3,7 @@ title: "Самохостинг (часть 9) - Arr stack + медиатека"
 date: 2025-04-07
 author: "Silver Ghost"
 tags: ["Самохостинг"]
-image: "https://geeknest.ru/content/images/2025/03/img-veyOEsr8mIT19vOUZRAM1pvW.png"
+image: "/images/2025/media.jpeg"
 description: "В этой статье я расскажу, как настроить полноценную систему автоматического скачивания и организации медиаконтента с помощью Sonarr (для сериалов), Radarr (для фильмов), Lidarr (для музыки), Jackett (для поиска по трекерам) и qBittorrent (для загрузки торрентов). Эта экосистема интегрируется с Plex, о котором у нас уже есть отдельная статья.
 
 

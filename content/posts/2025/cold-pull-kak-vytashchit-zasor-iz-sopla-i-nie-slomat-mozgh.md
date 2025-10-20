@@ -3,7 +3,7 @@ title: "Cold pull — как вытащить засор из сопла и не
 date: 2025-04-24
 author: "Silver Ghost"
 tags: ["3d печать", "flashforge"]
-image: "https://geeknest.ru/content/images/2025/04/AD5MP_16dbf5c1-b16e-44c6-a2cd-2f9757ddbad5.png.webp"
+image: "/images/2025/clean.jpeg"
 description: "Знаете, что общего у принтера Flashforge 5M Pro и кофемашины, которая внезапно перестала варить кофе? Правильно — если в узком месте что-то застряло, всё остальное тут же идёт по одному месту. В 3D-принтерах это место — сопло. И когда оно забивается, без паники. Есть старый добрый способ — cold pull.
 
 А теперь по-человечески:"
