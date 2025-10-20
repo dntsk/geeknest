@@ -1,0 +1,17 @@
+<header class="gh-head gh-outer">
+    <div class="gh-head-inner gh-inner">
+        <div class="gh-head-brand">
+            <h1 class="gh-head-logo">
+                <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+            </h1>
+        </div>
+
+        <nav class="gh-head-menu">
+            <ul class="nav">
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</header>

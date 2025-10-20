@@ -1,0 +1,47 @@
+{{ define "main" }}
+<section class="gh-topic gh-topic-grid">
+    <h2 class="gh-topic-name">
+        <a href="/posts/">Последнее опубликованное</a>
+    </h2>
+
+    <div class="gh-topic-content">
+        {{ range $index, $page := first 7 .Site.RegularPages }}
+            {{ partial "post-card.html" (dict "context" $page "index" (add $index 1)) }}
+        {{ end }}
+    </div>
+
+    <footer class="gh-topic-footer">
+        <a class="gh-topic-link" href="/posts/">
+            Показать больше
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+    </footer>
+</section>
+
+{{ $categories := slice "Самохостинг" "Новости" "Перевод" "Разное" "Утилиты" "3d печать" }}
+
+{{ range $categories }}
+    {{ $category := . }}
+    {{ $posts := where $.Site.RegularPages ".Params.tags" "intersect" (slice $category) }}
+    {{ if $posts }}
+    <section class="gh-topic gh-topic-grid">
+        <h2 class="gh-topic-name">
+            <a href="/tags/{{ $category | urlize }}/">{{ $category }}</a>
+        </h2>
+
+        <div class="gh-topic-content">
+            {{ range $index, $page := first 5 $posts }}
+                {{ partial "post-card.html" (dict "context" $page "index" (add $index 1)) }}
+            {{ end }}
+        </div>
+
+        <footer class="gh-topic-footer">
+            <a class="gh-topic-link" href="/tags/{{ $category | urlize }}/">
+                Показать больше
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </footer>
+    </section>
+    {{ end }}
+{{ end }}
+{{ end }}

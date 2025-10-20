@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+    <div class="gh-site">
+        {{ partial "header.html" . }}
+        
+        <main class="gh-main gh-outer">
+            <div class="gh-inner">
+                {{ block "main" . }}{{ end }}
+            </div>
+        </main>
+        
+        {{ partial "footer.html" . }}
+    </div>
+</body>
+</html>

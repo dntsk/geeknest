@@ -1,0 +1,36 @@
+{{ $page := .context }}
+{{ $index := .index }}
+{{ $isLarge := and (eq $index 1) }}
+
+<article class="gh-card post{{ if $isLarge }} large{{ end }}">
+    <a class="gh-card-link" href="{{ $page.RelPermalink }}">
+        {{ if $page.Params.image }}
+        <figure class="gh-card-image">
+            <img src="{{ $page.Params.image }}" alt="{{ $page.Title }}">
+        </figure>
+        {{ end }}
+
+        <div class="gh-card-wrapper">
+            <header class="gh-card-header">
+                <h3 class="gh-card-title">{{ $page.Title }}</h3>
+            </header>
+
+            {{ if and (or $page.Description $page.Summary) $isLarge }}
+            <div class="gh-card-excerpt">
+                {{ if $page.Description }}
+                    {{ $page.Description }}
+                {{ else }}
+                    {{ $page.Summary | truncate 200 }}
+                {{ end }}
+            </div>
+            {{ end }}
+
+            <footer class="gh-card-footer">
+                <span class="gh-card-author">{{ $page.Params.author | default $.Site.Params.author }}</span>
+                <time class="gh-card-date" datetime="{{ $page.Date.Format "2006-01-02" }}">
+                    {{ $page.Date.Day }} {{ index (slice "янв." "фев." "мар." "апр." "мая" "июня" "июля" "авг." "сент." "окт." "нояб." "дек.") (sub $page.Date.Month 1) }} {{ $page.Date.Year }}
+                </time>
+            </footer>
+        </div>
+    </a>
+</article>

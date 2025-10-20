@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="gh-topic gh-topic-grid">
+    <h2 class="gh-topic-name">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+
+    <div class="gh-topic-content">
+        {{ $paginator := .Paginate .Pages }}
+        {{ range $index, $page := $paginator.Pages }}
+            {{ partial "post-card.html" (dict "context" $page "index" (add 1 $index)) }}
+        {{ end }}
+    </div>
+
+    {{ if or $paginator.HasPrev $paginator.HasNext }}
+    <footer class="gh-topic-footer">
+        {{ if $paginator.HasPrev }}
+        <a class="gh-topic-link" href="{{ $paginator.Prev.URL }}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Предыдущая страница
+        </a>
+        {{ end }}
+        
+        {{ if $paginator.HasNext }}
+        <a class="gh-topic-link" href="{{ $paginator.Next.URL }}">
+            Следующая страница
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        {{ end }}
+    </footer>
+    {{ end }}
+</section>
+{{ end }}

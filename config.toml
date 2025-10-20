@@ -1,0 +1,44 @@
+baseURL = "https://geeknest.ru/"
+languageCode = "ru-ru"
+title = "Логово гика"
+
+[pagination]
+pagerSize = 10
+
+[params]
+  description = "Технологии и новости: будь в курсе всего"
+  author = "Silver Ghost"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[[menu.main]]
+  name = "Самохостинг"
+  url = "/tags/самохостинг/"
+  weight = 1
+
+[[menu.main]]
+  name = "Новости"
+  url = "/tags/новости/"
+  weight = 2
+
+[[menu.main]]
+  name = "Перевод"
+  url = "/tags/перевод/"
+  weight = 3
+
+[[menu.main]]
+  name = "Разное"
+  url = "/tags/разное/"
+  weight = 4
+
+[[menu.main]]
+  name = "Утилиты"
+  url = "/tags/утилиты/"
+  weight = 5
+
+[[menu.main]]
+  name = "3D печать"
+  url = "/tags/3d-печать/"
+  weight = 6
