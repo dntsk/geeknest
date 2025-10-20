@@ -55,9 +55,7 @@ drwxr-xr-x. 2 root root 120 Jun 17 05:26 by-uuid
 ACTION=change
 DEVNAME=/dev/sda1
 DEVTYPE=partition
-SUBSYSTEM=block
-
-`
+SUBSYSTEM=block`
 
 ## Во время загрузки системы﻿
 На ранних этапах загрузки процесс /init﻿ из initramfs﻿ взаимодействует с контроллерами PCI﻿, SATA﻿, SCSI﻿, NVMe﻿ и т. д.
@@ -65,7 +63,7 @@ SUBSYSTEM=block
 
 Пример события добавления устройства:
 
-````
+```
 ACTION=add
 DEVNAME=/dev/sdb
 ID_SERIAL=SanDisk_Cruzer_Glide_4C530001220702114173
@@ -73,7 +71,6 @@ ID_VENDOR=SanDisk
 ID_MODEL=Cruzer_Glide
 ID_FS_TYPE=ext4
 ID_FS_LABEL=MYUSB
-
 ```
 
 Если диск содержит MBR﻿ или GPT﻿, создаются события add﻿ для каждого раздела.
@@ -114,13 +111,16 @@ lrwxrwxrwx. 1 root root  9 wwn-0x605447b1be9845b4… -> ../../sdb
 
 ## Пример udev события после mkfs.btrfs﻿
 
-`UDEV[...] change /devices/.../block/sda/sda1 (block)
+```
+UDEV[...] change /devices/.../block/sda/sda1 (block)
 ACTION=change
 DEVLINKS=/dev/disk/by-uuid/... /dev/disk/by-label/data-btrfs /dev/disk/by-path/...
 ID_FS_TYPE=btrfs
 ID_FS_UUID=cd530dea-7f4d-45be-a307-f683fa43c2cc
 ID_FS_LABEL=data-btrfs
-`Такие события могут отлавливаться прикладными сервисами, чтобы реагировать на создание или изменение файловых систем.
+```
+
+Такие события могут отлавливаться прикладными сервисами, чтобы реагировать на создание или изменение файловых систем.
 
 
 ## Вывод﻿
