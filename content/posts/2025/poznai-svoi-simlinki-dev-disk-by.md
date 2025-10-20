@@ -14,11 +14,11 @@ description: "Где создаются ссылки﻿
 
 Пример содержимого каталога /dev/disk﻿
 
-[root@host disk]# pwd
+`[root@host disk]# pwd
 /dev/disk
 [root@host disk]# ls -l
 drwxr-xr-x. 2 root root 320 Apr  1 13:47 by-id
-drwxr-xr-x. 2 root root  60"
+drwxr-xr-x. 2 root root  60"`
 ---
 
 ## Где создаются ссылки﻿
