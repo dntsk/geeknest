@@ -5,7 +5,7 @@
     </h2>
 
     <div class="gh-topic-content">
-        {{ range $index, $page := first 7 .Site.RegularPages }}
+        {{ range $index, $page := first 7 (where .Site.RegularPages "Type" "posts") }}
             {{ partial "post-card.html" (dict "context" $page "index" (add $index 1)) }}
         {{ end }}
     </div>
