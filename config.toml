@@ -42,3 +42,8 @@ pagerSize = 10
   name = "3D печать"
   url = "/tags/3d-печать/"
   weight = 6
+
+[[menu.main]]
+  name = "Донаты"
+  url = "/donate/"
+  weight = 7
