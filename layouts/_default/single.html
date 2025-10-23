@@ -3,12 +3,14 @@
     <header class="gh-article-header">
         <h1 class="gh-article-title">{{ .Title }}</h1>
         
+        {{ if eq .Type "posts" }}
         <div class="gh-article-meta">
             <span class="gh-article-author">{{ .Params.author | default .Site.Params.author }}</span>
             <time class="gh-article-date" datetime="{{ .Date.Format "2006-01-02" }}">
                 {{ .Date.Day }} {{ index (slice "января" "февраля" "марта" "апреля" "мая" "июня" "июля" "августа" "сентября" "октября" "ноября" "декабря") (sub .Date.Month 1) }} {{ .Date.Year }}
             </time>
         </div>
+        {{ end }}
     </header>
 
     {{ if .Params.image }}
