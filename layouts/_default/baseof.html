@@ -57,6 +57,93 @@
     </div>
 
 
+    <!-- Search Modal -->
+    <div id="search-modal" class="search-modal" style="display: none;">
+        <div class="search-modal-overlay"></div>
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <h2>Поиск</h2>
+                <button class="search-modal-close" aria-label="Закрыть поиск">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div id="pagefind-search"></div>
+        </div>
+    </div>
+
+    <!-- Pagefind UI -->
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+
+    <!-- Search Modal Script -->
+    <script>
+        (function() {
+            const modal = document.getElementById('search-modal');
+            const overlay = modal.querySelector('.search-modal-overlay');
+            const closeBtn = modal.querySelector('.search-modal-close');
+            let pagefindUI = null;
+
+            // Initialize Pagefind UI
+            function initPagefind() {
+                if (pagefindUI) return;
+                pagefindUI = new PagefindUI({
+                    element: "#pagefind-search",
+                    showSubResults: true,
+                    translations: {
+                        placeholder: "Введите запрос...",
+                        clear_search: "Очистить",
+                        load_more: "Загрузить еще",
+                        search_label: "Поиск по сайту",
+                        filters_label: "Фильтры",
+                        zero_results: "Ничего не найдено по запросу [SEARCH_TERM]",
+                        many_results: "[COUNT] результатов по запросу [SEARCH_TERM]",
+                        one_result: "[COUNT] результат по запросу [SEARCH_TERM]",
+                        alt_search: "Ничего не найдено по запросу [SEARCH_TERM]. Показаны результаты для [DIFFERENT_TERM]",
+                        search_suggestion: "Ничего не найдено по запросу [SEARCH_TERM]. Попробуйте один из следующих запросов:",
+                        searching: "Поиск [SEARCH_TERM]..."
+                    }
+                });
+            }
+
+            // Open modal
+            window.openSearchModal = function() {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                initPagefind();
+                // Focus on search input after modal opens
+                setTimeout(() => {
+                    const searchInput = modal.querySelector('input[type="text"]');
+                    if (searchInput) searchInput.focus();
+                }, 100);
+            };
+
+            // Close modal
+            function closeSearchModal() {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+
+            // Event listeners
+            overlay.addEventListener('click', closeSearchModal);
+            closeBtn.addEventListener('click', closeSearchModal);
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.style.display === 'flex') {
+                    closeSearchModal();
+                }
+                // Ctrl+K or Cmd+K to open search
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    openSearchModal();
+                }
+            });
+        })();
+    </script>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
