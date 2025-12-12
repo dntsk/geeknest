@@ -3,7 +3,7 @@ title: "Podkop на OpenWrt: точечная маршрутизация без 
 date: 2025-12-12
 author: "Silver Ghost"
 tags: ["OpenWRT"]
-image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fEFJfGVufDB8fHx8MTc0MjQ2OTIwN3ww&ixlib=rb-4.0.3&q=80&w=2000"
+image: "https://file.aiquickdraw.com/imgcompressed/img/compressed_8d13411d08bbfe4dd173578d93456356.webp"
 description: "Установка и настройка Podkop — умного диспетчера трафика на OpenWrt. Обходим блокировки, сохраняем банки и игры на прямом канале. Sing-box, FakeIP, LuCI-интерфейс — всё работает из коробки."
 ---
 
