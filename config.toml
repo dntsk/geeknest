@@ -2,6 +2,10 @@ baseURL = "https://geeknest.ru/"
 languageCode = "ru-ru"
 title = "Логово гика"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [pagination]
 pagerSize = 10
 

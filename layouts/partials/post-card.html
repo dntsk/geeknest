@@ -6,7 +6,7 @@
     <a class="gh-card-link" href="{{ $page.RelPermalink }}">
         {{ if $page.Params.image }}
         <figure class="gh-card-image">
-            <img src="{{ $page.Params.image }}" alt="{{ $page.Title }}">
+            <img src="{{ $page.Params.image | relURL }}" alt="{{ $page.Title }}">
         </figure>
         {{ end }}
 

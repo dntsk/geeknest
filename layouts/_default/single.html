@@ -15,7 +15,7 @@
 
     {{ if .Params.image }}
     <figure class="gh-article-image">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
     </figure>
     {{ end }}
 
